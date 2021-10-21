@@ -37,11 +37,12 @@ const Login = () => {
         <form>
           <label htmlFor="email">Correo</label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             autoComplete="off"
             placeholder="Ingresa tu correo"
+            required
             ref={emailRef}
           />
           <label htmlFor="password">Contraseña</label>
@@ -50,6 +51,7 @@ const Login = () => {
             name="password"
             id="password"
             placeholder="Ingresa tu contraseña"
+            required
             ref={passwordRef}
           />
           <button onClick={signIn}>Iniciar sesión</button>
