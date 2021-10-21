@@ -1,0 +1,88 @@
+#Messages {
+  z-index: 0;
+  background: #f3f4f8;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 1fr 64px;
+  height: 100%;
+  #TopBar,
+  #MessageControl,
+  #MessagesContent {
+    box-sizing: border-box;
+    padding: 0 32px;
+  }
+  #TopBar,
+  #MessageControl {
+    display: grid;
+    align-items: center;
+    height: 100%;
+  }
+  #TopBar {
+    background: #00cd7e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    column-gap: 16px;
+    grid-template-columns: 45px 1fr;
+    button {
+      display: none;
+    }
+    .profile-picture {
+      width: 100%;
+      height: 45px;
+      border-radius: 100%;
+      background-color: #00cd7e;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .username {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+  @import "./MessagesContent.scss";
+  #MessageControl {
+    column-gap: 10px;
+    grid-template-columns: 1fr 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    button {
+      height: 40px;
+      width: 100%;
+      background: #00cd7e;
+      border-radius: 100%;
+      background-image: url("../../../img/send-icon.svg");
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    input {
+      border: 1px solid rgba(#000000, 0.1);
+    }
+    input::placeholder {
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+@media (max-width: 768px) {
+  #TopBar {
+    grid-template-columns: 40px 1fr 12px !important;
+    button {
+      display: block !important;
+      height: 100%;
+      width: 100%;
+      background-image: url("../../../img/dots-icon.svg");
+      background-position: center;
+      background-size: 6px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media (max-width: 599px) {
+  #TopBar,
+  #MessageControl,
+  #MessagesContent {
+    padding: 0 16px !important;
+  }
+  #Topbar {
+    column-gap: 16px !important;
+  }
+}

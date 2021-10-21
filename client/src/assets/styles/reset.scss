@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@700&family=Poppins:wght@400;600;700&display=swap");
+html,
+label,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+}
+label,
+input,
+button {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+}
+label {
+  font-family: "Inter", sans-serif;
+  color: #757575;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+input {
+  width: 100%;
+  padding: 12px 22px;
+  border-radius: 24px;
+}
+input:focus {
+  outline: none;
+}
+button {
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+a {
+  font-size: 0.875rem;
+  color: #00cd6b;
+  font-weight: 700;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f8fc;
+}
+::-webkit-scrollbar-thumb {
+  background: #9193a6;
+  border-radius: 6px;
+}
