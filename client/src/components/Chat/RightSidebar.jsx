@@ -41,7 +41,7 @@ const RightSidebar = ({ isSidebarOpen }) => {
   const items = [
     makeInfo("Notas", notes),
     makeInfo("Edad", getAge(birthDate)),
-    makeInfo("correo", email),
+    makeInfo("Correo", email),
     makeInfo("Prioridad", priority),
     makeInfo("Promoción", promotion),
     makeInfo("CURP", curp),
